@@ -104,7 +104,7 @@ return (
                     sm:gap-8  sm:scrollbar-thin scrollbar-thumb-[black]">
                 {  
                 stories.map((store)=>{
-              return <div className='pt-4 pd-4 w-full h-full'>  
+              return <div key={store.id} className='pt-4 pd-4 w-full h-full'>  
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-[black] mt-[-8px]"

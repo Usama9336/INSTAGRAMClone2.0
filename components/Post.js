@@ -12,7 +12,7 @@ import heart from '@/assets/heart.png'
 import heart1 from '@/assets/heart1.png'
 import bookmark from '@/assets/bookmark.png'
 import video from '@/assets/video.png'
-export default function Post({key,id,username,profilepic,postphoto,caption,timestamp}){
+export default function Post({id,username,profilepic,postphoto,caption,timestamp}){
   const comments=[{
            username:"jon div",
            comment:"this is comment"
@@ -117,7 +117,7 @@ await addDoc(collection(db,'posts',id,'comments'),{
 </div>
 </div>
 <div className="w-6 h-6">
-  <Image src={send}/>
+  <Image alt="" src={send}/>
 </div>
 </div>
 </div>
@@ -130,18 +130,18 @@ await addDoc(collection(db,'posts',id,'comments'),{
      <div className="m-3 w-full flex justify-between">
       <div className="flex space-x-4 ">
       <div className="btn" onClick={likepost}>
-        <Image src={(liked?heart1:
+        <Image alt="" src={(liked?heart1:
           heart)}/>
       </div>
       <div className="btn">
-        <Image src={video}/>
+        <Image alt="" src={video}/>
       </div>
       <div className="btn">
-        <Image src={send}/>
+        <Image alt="" src={send}/>
       </div>
       </div>
        <div className="btn mr-[15px]">
-        <Image src={bookmark}/>
+        <Image alt="" src={bookmark}/>
       </div>
       </div>
 
@@ -160,14 +160,14 @@ await addDoc(collection(db,'posts',id,'comments'),{
      <div className="">
 {
   Comments.map((comment)=>{
-       return <div className="max-w-24
+       return <div key={comment.id} className="max-w-24
        overflow-y-auto flex justify-between ml-2">
           <div className="flex items-center truncate">
             <p className='customfont mr-2'>{comment.data().username}</p>
             <p className='truncate mr-2'>{comment.data().Comment}</p>
           </div>
-          <div className="h-3 w-3 mt-2 shrink-0" onclick={()=>setliked1(!liked1)}>
-          <Image src={(liked1?heart1:
+          <div className="h-3 w-3 mt-2 shrink-0" onClick={()=>setliked1(!liked1)}>
+          <Image alt="" src={(liked1?heart1:
           heart)}/>
           </div>
         </div>
@@ -192,7 +192,7 @@ await addDoc(collection(db,'posts',id,'comments'),{
         onChange={(e)=>setComment(e.target.value)} />
       </div>
       <button className='font-bold text-sm text-[#0095f6]' onClick={sendcomment} >
-        <Image src={send} className="w-4 h-4"/>
+        <Image alt="" src={send} className="w-4 h-4"/>
       </button>
      </div>
     </div>

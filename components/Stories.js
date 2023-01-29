@@ -16,14 +16,6 @@ const Stories=()=> {
   const [stories, setstories] = useState([])
   const [open, setopen] = useRecoilState(Modalstatestory)
   const {data:session}=useSession();
-  {/*useEffect(() => {
-    setstories([...Array(30)].map(()=>({
-     userid:faker.datatype.uuid(),
-     username:faker.internet.userName(),
-     avatar:faker.image.avatar(),
-    }))
-    );
-  },[]);*/}
 
  
   useEffect(() => {
@@ -46,7 +38,7 @@ const Stories=()=> {
 </div>
         {
         stories.map((profile)=>{
-            return <Story username={profile.data().username} avatar={profile.data().profileimg} img={profile.data().image}/>
+            return <Story key={profile.id} username={profile.data().username} avatar={profile.data().profileimg} img={profile.data().image}/>
         })}
         
      </div>

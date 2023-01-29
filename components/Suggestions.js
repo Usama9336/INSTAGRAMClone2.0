@@ -12,14 +12,6 @@ import { FiSend } from 'react-icons/fi';
 export default function Suggestions() {
   const {data:session}=useSession();
     const [suggestion, setsuggestion] = useState([])
-    useEffect(() => {
-      setsuggestion([...Array(5)].map(()=>({
-       userid:faker.datatype.uuid(),
-       username:faker.internet.userName(),
-       avatar:faker.image.avatar(),
-      }))
-      );
-    },[]);
   console.log(suggestion)
 
   const [Comment,setComment]=useState("");
@@ -57,7 +49,7 @@ await addDoc(collection(db,'Chats'),{
       </div>*/}
       <div className="h-[30rem] scrollbar-thin scrollbar-thumb-[grey]">
       {Comments.map((chat)=>{
-return <div className="flex items-center justify-between mt-5 h-[rem]">
+return <div key={chat.id} className="flex items-center justify-between mt-5 h-[rem]">
 <div className="flex items-center">
 <div className="w-8 h-8">
     <img src={chat.data().image} alt="" className='rounded-full'/>
