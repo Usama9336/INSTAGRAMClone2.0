@@ -107,19 +107,20 @@ return <div key={chat.id} className="flex items-center justify-between mt-5 h-[r
 </div>
 })}
                   </div>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex gap-1 items-center">
                     <div className="mt-[14px]">
-                    <img src={session?.user?.image} alt="" className='w-8 h-8 rounded-full'/>
+                    <img src={session?.user?.image} alt="" className='sm:w-8 sm:h-8 sm:rounded-full
+                    rounded-full ml-[-6px] w-[7.8rem] h-[2rem]'/>
                     </div>
                   <div className="flex md-2 mt-4 h-[2rem]">
                   <input type='text' className="text-md text-[black] outline-0 rounded-[4px] " placeholder='Chat....' value={Comment}
         onChange={(e)=>setComment(e.target.value)} />
                 <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent  px-3 py-[0.1rem] text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent  px-3 py-[0.1rem]  text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 mr-[-24px] mt-[4px]"
                       onClick={sendcomment}
                     >
-                   <Image priority="true"  alt="" src={send} className="h-[1.2rem] w-[1.2rem] mt-[1px] "/>
+                   <Image priority="true"  alt="" src={send} className="sm:h-[1.2rem] sm:w-[1.2rem] sm:mt-[1px]  h-[1.1rem]"/>
                     </button>
                   </div>
                   <div className='mr-4'></div>

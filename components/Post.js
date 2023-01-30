@@ -164,7 +164,7 @@ await addDoc(collection(db,'posts',id,'comments'),{
        overflow-y-auto flex justify-between ml-2">
           <div className="flex items-center truncate">
             <p className='customfont mr-2'>{comment.data().username}</p>
-            <p className='truncate mr-2'>{comment.data().Comment}</p>
+            <p className='mr-2 truncate'>{comment.data().Comment}</p>
           </div>
           <div className="h-3 w-3 mt-2 shrink-0" onClick={()=>setliked1(!liked1)}>
           <Image priority="true"  alt="" src={(liked1?heart1:

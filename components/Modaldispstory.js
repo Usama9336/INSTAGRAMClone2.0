@@ -99,11 +99,11 @@ return (
                 <Dialog.Panel className=" flex flex-col items-center justify-between transform overflow-hidden rounded-2xl bg-[grey] p-6 text-left align-middle shadow-xl transition-all h-[41rem] ">
                  
                     <div className=" 
-                     sm:flex gap-8 scrollbar-thin scrollbar-thumb-[black]
+                     gap-8 scrollbar-thin scrollbar-thumb-[black]
                     sm:gap-8  sm:scrollbar-thin scrollbar-thumb-[black]">
                 {  
                 stories.map((store)=>{
-              return <div key={store.id} className='pt-4 pd-4 w-full h-full'>  
+              return <div key={store.id} className='pt-4 pd-4 w-auto h-auto'>  
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-[black] mt-[-8px]"
