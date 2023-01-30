@@ -117,7 +117,7 @@ await addDoc(collection(db,'posts',id,'comments'),{
 </div>
 </div>
 <div className="w-6 h-6">
-  <Image alt="" src={send}/>
+  <Image priority="true"  alt="" src={send}/>
 </div>
 </div>
 </div>
@@ -130,18 +130,18 @@ await addDoc(collection(db,'posts',id,'comments'),{
      <div className="m-3 w-full flex justify-between">
       <div className="flex space-x-4 ">
       <div className="btn" onClick={likepost}>
-        <Image alt="" src={(liked?heart1:
+        <Image priority="true"  alt="" src={(liked?heart1:
           heart)}/>
       </div>
       <div className="btn">
-        <Image alt="" src={video}/>
+        <Image priority="true"  alt="" src={video}/>
       </div>
       <div className="btn">
-        <Image alt="" src={send}/>
+        <Image priority="true"  alt="" src={send}/>
       </div>
       </div>
        <div className="btn mr-[15px]">
-        <Image alt="" src={bookmark}/>
+        <Image priority="true"  alt="" src={bookmark}/>
       </div>
       </div>
 
@@ -167,7 +167,7 @@ await addDoc(collection(db,'posts',id,'comments'),{
             <p className='truncate mr-2'>{comment.data().Comment}</p>
           </div>
           <div className="h-3 w-3 mt-2 shrink-0" onClick={()=>setliked1(!liked1)}>
-          <Image alt="" src={(liked1?heart1:
+          <Image priority="true"  alt="" src={(liked1?heart1:
           heart)}/>
           </div>
         </div>
@@ -192,7 +192,7 @@ await addDoc(collection(db,'posts',id,'comments'),{
         onChange={(e)=>setComment(e.target.value)} />
       </div>
       <button className='font-bold text-sm text-[#0095f6]' onClick={sendcomment} >
-        <Image alt="" src={send} className="w-4 h-4"/>
+        <Image priority="true"  alt="" src={send} className="w-4 h-4"/>
       </button>
      </div>
     </div>

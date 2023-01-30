@@ -58,7 +58,6 @@ await uploadString(imagePath,image,'data_url').then(async(snapshot)=>{
 })
 setloading(false);
 };
-
 //add image to state (functionality)
 const addtostate=(e)=>{
 const reader=new FileReader();

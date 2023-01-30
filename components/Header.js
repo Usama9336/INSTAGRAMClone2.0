@@ -48,7 +48,7 @@ onSnapshot(query(collection(db,'Chats'),
         {/*left*/}
         <div className='flex'>
             <div className='p-2 w-[10rem] sm:w-[13rem] sm:p-2 sm:h-full sm:flex'>
-        <Image alt="" src={instagram}/>
+        <Image priority="true"  alt="" src={instagram}/>
             </div>
         </div>
           {/*middle*/}
@@ -61,20 +61,20 @@ onSnapshot(query(collection(db,'Chats'),
             {/*right*/}
             <div className='flex ml-[-4px] space-x-4 sm:flex sm:space-x-5'>
                  <div className='hidden sm:flex'>
-                <Image alt="" src={homeone} className="w-[1.6rem] h-[1.6rem] cursor-pointer hover:scale-[80%] duration-500"/>
+                <Image priority="true"  alt="" src={homeone} className="w-[1.6rem] h-[1.6rem] cursor-pointer hover:scale-[80%] duration-500"/>
                                  </div>
                  <div className='btn flex relative' onClick={()=>setopenchat(!openchat)}>
-                 <Image alt="" src={send} className=" hover:scale-[80%] duration-500"/>
+                 <Image priority="true"  alt="" src={send} className=" hover:scale-[80%] duration-500"/>
                   <div className='absolute flex top-2 left-3.5 items-center justify-center bg-red-500 text-[white] rounded-full w-4 h-4 text-xs'>{len}</div>
                  </div>
                  <div className='cursor-pointer flex' onClick={()=>setopen(!open)}>
                   <CgAddR className='w-[1.7rem] h-[1.8rem]  hover:scale-[80%] duration-500'/>
                  </div>
                  <div className='btn mt-[3px] hidden sm:flex'>
-                  <Image alt="" src={video} className=" hover:scale-[80%] duration-500"/>
+                  <Image priority="true"  alt="" src={video} className=" hover:scale-[80%] duration-500"/>
                  </div>
                  <div className='btn mt-[3px] hidden sm:flex'>
-                  <Image alt="" src={heart} className=" hover:scale-[80%] duration-500"/>
+                  <Image priority="true"  alt="" src={heart} className=" hover:scale-[80%] duration-500"/>
                  </div>
                  <div className='flex'>
                   <div className='btn mr-2 mt-[3px] ml-[-7px]' onClick={signIn}>

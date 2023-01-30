@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker'
 import React from 'react'
 import { useState,useEffect } from 'react'
 faker
+import Image from 'next/image'
 import { addDoc, collection,query,orderBy} from 'firebase/firestore';
 import { serverTimestamp } from 'firebase/firestore';
 import { db } from '@/Firebase'

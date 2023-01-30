@@ -10,7 +10,7 @@ export default function SignIn({ providers }) {
         <div key={provider.name}>
           <div className="flex flex-col items-center mt-12">
             <div className="w-[17rem] h-[5rem]">
-              <Image alt="" src={instagram}/>
+              <img  alt="" src={instagram.src}/>
             </div>
             <div className="rounded-full bg-blue-500 p-2">
           <button onClick={() => signIn(provider.id,{callbackUrl:"/"})}>

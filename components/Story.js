@@ -3,6 +3,7 @@ import { useRecoilState } from 'recoil'
 import { Modalstatedispstory } from '@/atoms/Modalstatedispstory'
 import { useSession } from 'next-auth/react'
 import images1 from '@/assets/images1.png'
+import Image from 'next/image'
 //import { Link } from 'react-router-dom'
 export default function Story({username,avatar,img}) {
   const [open, setopen] = useRecoilState(Modalstatedispstory)

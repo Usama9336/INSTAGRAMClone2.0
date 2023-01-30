@@ -119,7 +119,7 @@ return <div key={chat.id} className="flex items-center justify-between mt-5 h-[r
                       className="inline-flex justify-center rounded-md border border-transparent  px-3 py-[0.1rem] text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={sendcomment}
                     >
-                   <Image alt="" src={send} className="h-[1.2rem] w-[1.2rem] mt-[1px] "/>
+                   <Image priority="true"  alt="" src={send} className="h-[1.2rem] w-[1.2rem] mt-[1px] "/>
                     </button>
                   </div>
                   <div className='mr-4'></div>

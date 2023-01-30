@@ -6,6 +6,7 @@ import Modalstory from '@/components/Modalstory'
 import  Modalchat  from '@/components/Modalchat'
 import { useRouter } from 'next/router'
 import Modaldispstory from '@/components/Modaldispstory'
+import Image from 'next/image'
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
 export default function Home() {
   return (
