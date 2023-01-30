@@ -33,10 +33,10 @@ export default function Firstpage() {
         <p>have Signed in My project and Is Present at </p>
         <p>same Time. I Have Used Same design As </p>
         <p>Instagram Web But in Some Components i </p>
-        <p>Haven't Made Exact Same as Instagram</p>
+        <p>Have not Made Exact Same as Instagram</p>
         <p>Please Make sure you have given a</p>
         <p>Feedback Of This Project in Comments</p>
-        <p>Chat-Box.</p>
+        <p>or Chat-Box.</p>
         <p>You can see My Project By Clicking Gets </p>
         <p>Started</p>
         <div className=''>
